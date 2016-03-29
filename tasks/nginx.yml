@@ -15,3 +15,6 @@
 
 - name: "Add htpasswd file."
   template: src=htpasswd.j2 dest=/etc/nginx/htpasswd
+
+- name: "Add correct index.html"
+  template: src=index.html.j2 dest=/usr/share/nginx/html/index.html
